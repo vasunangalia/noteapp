@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Notes app</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+              <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+              <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body class="back">
+         
+         <div class="ui fixed inverted menu">
+             <div class="ui container">
+                 <div class="header item"><i class="code icon"></i>Note App</div>
+                 <a href="/" class="item">Home</a>
+                 <a href="/notes/new" class="item">New note</a>
+                  <a href="/notifications"  class="item ">Notification</a>
+                 <div class="right menu">
+                     <p>
+                         <form action="/notes" method="GET" class="ui form">
+                             <div class="header item">
+                                 <input type="text" name="search" placeholder="search ...." >
+                                 <input type="submit" value="search" class="ui violet inverted button">
+                             </div>
+                         </form>
+                     </p>
+                </div>
+             </div>
+         </div>
+  

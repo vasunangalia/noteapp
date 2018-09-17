@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+<div class="ui main text container segment">
+    <div class="ui top attached segment">
+        <div class="item">
+        <!--    <div class="content">
+                 <span></span>
+            </div>  -->
+            
+         
+             <div class="ui ordered list">
+                  <% notif.forEach(function(notif){ %>
+        <div class = "item"><%=notif.name%>   was due 
+             
+             <div class="item">
+            <form id="delete" action="/notification/<%=notif._id %>?_method=DELETE" method="POST">
+                <button class="mini ui red inverted button">Delete</button>
+            </form>
+            </div>
+            </div>
+            <% }) %>
+  </div>
+        </div>
+        
+    </div>
+     
+</div>

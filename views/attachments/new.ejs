@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+<div class="ui main text container segment">
+    <div  class="ui huge header"> New attachment to <%= note.title %></div>
+    <form class="ui form" action="/notes/<%=note._id%>/attachments" method="POST">
+        <div class="field">
+            <lable>Name</lable>
+            <input type="text" name="attachment[name]" placeholder="name">
+        </div>
+         <div class="field">
+            <lable>link</lable>
+           <input type="url" name="attachment[link]" placeholder="url">
+        </div>
+        
+        <input class="ui violet basic button" type="submit">
+    </form>
+
+</div>

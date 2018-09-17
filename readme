@@ -1,0 +1,18 @@
+This is a note creating app
+
+1.) seed.js is used to add arbitary data to the db.
+        when ever server starts it will remove all previous notes and add new ones 
+
+2.) You can add reminder to a note  
+            go to read more then add reminder. Reminder is in hours but to check the functionaity its really seaconds so if (reminder = 3) after 3 seconds reminder will be dure
+
+3.) reminder can be seen at notification page 
+             all reminder which are due can be see here . reminder deletes as soon as their time is over but notifications have to be deleted manually
+
+4.) to start the app 
+            node app.js
+            
+5.) app.js has several comments to configure databse and localhost
+
+6.) any quieres please contact menu
+

@@ -1,0 +1,36 @@
+<% include ./partials/header %>
+
+<div class=" ui main text container">
+    <div class="ui huge header ">Notes app</div>
+    <div class="ui top attached segment">
+    <div class="ui divided items">
+        <% notes.forEach(function(note){ %>
+        <div class="item">
+            <div class="content">
+                <a class="header" href="/notes/<%= note._id %>"><%= note.title%></a>
+              <!--  <div class="meta">
+                    <span></span>
+                </div -->
+                <div class="discription">
+                     <p><%= note.body.substring(0, 200) %>....</p>
+                </div>
+                <div>
+                    <a class="ui floated inverted green button" href="/notes/<%= note._id %>">
+                        Read more
+                        <i class="right chevron icon"></i>
+                    </a>
+                </div>
+           <!--     <div>
+                    <a class="ui floated inverted green button" href=">">
+                        View
+                        <i class="right chevron icon"></i>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+                <% }) %>
+    </div>
+    </div>
+    
+</div>
+
